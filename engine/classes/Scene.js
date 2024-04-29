@@ -93,7 +93,10 @@ class Scene {
         let usingLogicalCoordinates = this.logicalWidth > 0 && this.aspectRatio > 0
 
         if (usingLogicalCoordinates) {
+            let logicalHeight = this.logicalWidth * this.aspectRatio
+            
             if (this.aspectRatio > windowAspectRatio) {
+                
                 this.letterBox1End = (ctx.canvas.width) / 2 - (ctx.canvas.height / this.aspectRatio) / 2;
                 this.letterBox2Start = (ctx.canvas.width) / 2 + (ctx.canvas.height / this.aspectRatio) / 2;
                 ctx.translate(this.letterBox1End, 0)

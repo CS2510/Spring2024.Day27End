@@ -16,7 +16,7 @@ class PointGameObject extends GameObject {
     super();
     this.addComponent(new Point())
 
-    if (false) {
+    if (true) {
       //This option: Ignoring all walls
       //Sliding "works" :)
       //Collision doesn't work :(
@@ -55,7 +55,7 @@ class PointGameObject extends GameObject {
       this.addComponent(new KeyboardComponent())
       this.addComponent(new CheckTransform2())
     }
-    if (true) {
+    if (false) {
       //This Option: Move, but loop slowly to check for collisions...
       //...if there is a collision, see if we can keep sliding
       //This may take a lot of time
